@@ -3,7 +3,7 @@
 all: cv.pdf
 
 cv.pdf: cv.tex jspiescv.bib
-	latexmk -pdf -bibtex -use-make cv.tex
+	latexmk -pdf -bibtex -use-make -recorder cv.tex
 
 clean:
 	latexmk -C
